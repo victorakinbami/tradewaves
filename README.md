@@ -10,7 +10,7 @@ This project demonstrates a production-style ETL pipeline built on modern data e
 
 - **Destination**: Amazon Redshift (analytics warehouse).
 
-The pipeline continuously replicates operational data from RDS into Redshift, ensuring that analytics teams always have access to fresh, reporting-ready datasets. This setup models how real-world companies sync application databases with cloud data warehouses for reporting, BI, and decision-making.
+The pipeline continuously replicates transactional data from RDS into Redshift ensuring that analytics teams always have access to fresh and reporting-ready datasets. This setup models how real-world companies sync application databases with cloud data warehouses for reporting, BI and decision-making.
 
 
 # Architecture
@@ -50,7 +50,7 @@ terraform apply
 | -------------- | -------------------------------------------------------   |
 | **Networking** | VPC, Public and Private Subnets, Subnet Groups            |
 | **Security**   | Security Groups (least-privilege), IAM Roles and Policies |
-| **Databases**  | Amazon RDS PostgreSQL, Amazon Redshift Cluster            |
+| **Databases**  | Amazon RDS PostgreSQL                                     |
 | **Warehouse**  | Amazon Redshift Cluster                                   |
 
 
